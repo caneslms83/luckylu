@@ -14,7 +14,7 @@ jobs:
     - name: SSH Deploy to WP Engine
       uses: bowiedev/github-action-wpengine-ssh-deploy@master 
       env: 
-          WPE_ENV_NAME: luckylu 
+          WPE_ENV_NAME: luckylu
+          TPO_PATH: "wp-content/themes/twentytwenty" 
           WPENGINE_SSHG_KEY_PUBLIC: ${{ secrets.PUBLIC_KEY_NAME }} 
           WPENGINE_SSHG_KEY_PRIVATE: ${{ secrets.PRIVATE_KEY_NAME }}
-	  TPO_PATH: "wp-content/themes/twentytwenty" 
